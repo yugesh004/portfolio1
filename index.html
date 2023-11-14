@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YUGESH</title>
+    <link rel="shortcut icon" href="assets/img/IMG-20230707-WA0000.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+
+<body onunload="fun()">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ========== Start welcome ========== -->
+    <script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+AOS.init();
+        function fun() {
+            var msg = new SpeechSynthesisUtterance();
+            msg.text = "welcome to yugesh public portfolio";
+            window.speechSynthesis.speak(msg);
+        }
+
+        function contact() {
+            var msg = new SpeechSynthesisUtterance();
+            msg.text = "sorry now it not in under condition try by the below social media accunts";
+            window.speechSynthesis.speak(msg);
+            alert("sorry its currently under maintenance")
+        }
+
+    </script>
+    <!-- ========== End welcome ========== -->
+    <!-- ========== Start home page ========== -->
+    <!-- ========== Start header ========== -->
+    <section id="home">
+        <nav>
+            <ul>
+                <a href="#home" class="a">home</a>
+                <a href="#about" class="a">about</a>
+                <a href="#skill" class="a">skills</a>
+                <a href="#contact" class="a">contact</a>
+            </ul>
+        </nav>
+        <!-- ========== End header ========== -->
+        <!-- ========== Start home content ========== -->
+        <div class="home">
+            <div class="home-content" data-aos="zoom-out-right">
+
+                <img src="assets/img/IMG-20230707-WA0000.jpg" alt="YUGESH" class="home-content__img" onclick="play()">
+                <div class="home-content__para" >
+                    <h1>Welcome</h1>
+                    <p>YUGESH M <br> BCA student</p>
+                </div>
+            </div>
+        </div>
+        <!-- ========== End home content ========== -->
+    </section>
+    <!-- ========== End home page ========== -->
+
+    <!-- ========== Start About ========== -->
+    <section id="about">
+        <div class="about">
+            <div class="about-content" data-aos="zoom-out-left">
+                <img src="assets/img/skillpage-img.png" alt="" class="about-content__img">
+                <div class="about-content__para">
+                    <p>I'm YUGESH M, and I'm a BCA student of DON BOSCO COLLEGE dharmapuri, learing about web development
+                       </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End About ========== -->
+
+    <!-- ========== Start skills ========== -->
+    <section id="skill">
+        <div class="skill">
+            <div class="skill-content" data-aos="zoom-out-up">
+                <img src="assets/img/skillpage-img.png" alt="" class="skill-content__img">
+                <table class="skill-content__para">
+                    <tr>
+                        <th>ForntEnd</th>
+                        <td>HTML</td>
+                        <td>CSS</td>
+                        <td>JS</td>
+                    </tr>
+                    <tr>
+                        <th>Programming languages</th>
+                        <td>C++</td>
+                        <td>Java</td>
+                        <td>Python</td>
+                    </tr>
+                    <tr>
+                        <th>Known IDE</th>
+                        <td>vb </td>
+                        <td>VS Code</td>
+                        
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End skills ========== -->
+    <!-- ========== Start contact ========== -->
+    <section id="contact">
+        <div class="contact" data-aos="zoom-out-left">
+            <div class="contact-content">
+                <img src="assets/img/contactpage-img.png" alt="" class="contact-content__img">
+                <form method="post" class="contact-content__para">
+                    <input type="email" id="email" placeholder="your email" autocomplete="off" required>
+                    <input type="text" id="text" placeholder="subject" required>
+                    <input type="submit" value="submit" id="btn" required onclick="contact()">
+
+                </form>
+            </div>
+        </div>
+
+    </section>
+    <!-- ========== End contact ========== -->
+    <!-- ========== Start footer ========== -->
+    <footer data-aos="zoom-out-down">
+        <div class="contact-content__icons">
+            <a href="https://www.instagram.com/unique_boy_yks_gt_650/" target="blank"><i class="fa fa-instagram"></i></a>
+            <a href="https://github.com/yugesh004/yugesh" target="blank"><i class="fa fa-github"></i></a>
+            <a href="yugeshbca001@gmail.com" target="blank"><i class="fa fa-google"></i></a>
+        </div>
+        <h2>&copy; 2023 YUGESH</h2>
+    </footer>
+    <!-- ========== End footer ========== -->
+</body>
+
+</html>
